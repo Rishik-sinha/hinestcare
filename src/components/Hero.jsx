@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// --- Realistic SVG Icons ---
+// --- SVG Icons (remain the same) ---
 const HomeIcon = () => <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>;
 const BathroomIcon = () => <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /><path strokeLinecap="round" strokeLinejoin="round" d="M16 3h-2.28a2 2 0 00-1.995 1.684l-1.45 4.35A2 2 0 018.28 11H8a2 2 0 00-2 2v1a2 2 0 002 2h8a2 2 0 002-2v-1a2 2 0 00-2-2h-.28a2 2 0 01-1.995-2.316l-1.45-4.35A2 2 0 0011.28 3H9" /></svg>;
 const CarpetIcon = () => <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" /><path strokeLinecap="round" strokeLinejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" /></svg>;
@@ -34,16 +34,12 @@ const Hero = () => {
     ];
 
   return (
-    // The main section is now just a container, with no vertical padding.
     <section className="container mx-auto px-4">
-      {/* Padding is added to this inner div to push content below the header. */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center pt-0 pb-8 md:pb-16">
-        <div>
+        {/* --- CHANGE IS HERE --- */}
+        <div className="lg:pl-20">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-            Home services at your
-          </h2>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-            Door-Step
+            Home services at your doorstep
           </h2>
           <p className="mt-6 text-lg text-gray-600">
             What are you looking for?
